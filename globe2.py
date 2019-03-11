@@ -31,7 +31,7 @@ def rollrot(roll):
 
     return rotmat;
 
-series360=np.pi/180*np.array([x*0.1 for x in range(0, 3600)])
+series360=np.pi/180*np.array([x*1 for x in range(0, 361)])
 zbias=pd.DataFrame(dict(x=0*series360,y=0*series360,z=0*series360+1))
 
 londf=pd.DataFrame(dict(x=np.sin(series360),y=0*series360,z=np.cos(series360)))
